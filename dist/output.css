@@ -570,24 +570,8 @@ video {
   height: 100vh;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
 .h-10 {
   height: 2.5rem;
-}
-
-.h-52 {
-  height: 13rem;
 }
 
 .w-1\/3 {
@@ -618,6 +602,42 @@ video {
   border-radius: 1rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-t-\[1px\] {
+  border-top-width: 1px;
+}
+
+.border-t-\[5px\] {
+  border-top-width: 5px;
+}
+
+.border-veryPaleOrange {
+  --tw-border-opacity: 1;
+  border-color: hsl(33 100% 98% / var(--tw-border-opacity));
+}
+
+.border-softRed {
+  --tw-border-opacity: 1;
+  border-color: hsl(10 79% 65% / var(--tw-border-opacity));
+}
+
+.border-cyan {
+  --tw-border-opacity: 1;
+  border-color: hsl(186 34% 60% / var(--tw-border-opacity));
+}
+
+.border-cream {
+  --tw-border-opacity: 1;
+  border-color: hsl(27 66% 92% / var(--tw-border-opacity));
+}
+
 .bg-cream {
   --tw-bg-opacity: 1;
   background-color: hsl(27 66% 92% / var(--tw-bg-opacity));
@@ -633,22 +653,41 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(186 34% 60% / var(--tw-bg-opacity));
+}
+
+.bg-darkBrown {
+  --tw-bg-opacity: 1;
+  background-color: hsl(25 47% 15% / var(--tw-bg-opacity));
+}
+
+.bg-veryPaleOrange {
+  --tw-bg-opacity: 1;
+  background-color: hsl(33 100% 98% / var(--tw-bg-opacity));
+}
+
+.bg-mediumBrown {
+  --tw-bg-opacity: 1;
+  background-color: hsl(28 10% 53% / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1.125rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-base {
+  font-size: 1.125rem;
 }
 
 .font-bold {
@@ -660,12 +699,17 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-cream {
-  --tw-text-opacity: 1;
-  color: hsl(27 66% 92% / var(--tw-text-opacity));
-}
-
 .text-darkBrown {
   --tw-text-opacity: 1;
   color: hsl(25 47% 15% / var(--tw-text-opacity));
+}
+
+.text-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(186 34% 60% / var(--tw-text-opacity));
+}
+
+.text-softRed {
+  --tw-text-opacity: 1;
+  color: hsl(10 79% 65% / var(--tw-text-opacity));
 }
