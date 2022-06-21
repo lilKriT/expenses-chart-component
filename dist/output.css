@@ -562,6 +562,14 @@ video {
   margin-right: 1rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -596,6 +604,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .rounded-2xl {
@@ -677,8 +689,16 @@ video {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -688,6 +708,26 @@ video {
 
 .text-base {
   font-size: 1.125rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -712,4 +752,9 @@ video {
 .text-softRed {
   --tw-text-opacity: 1;
   color: hsl(10 79% 65% / var(--tw-text-opacity));
+}
+
+.text-mediumBrown {
+  --tw-text-opacity: 1;
+  color: hsl(28 10% 53% / var(--tw-text-opacity));
 }
