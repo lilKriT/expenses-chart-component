@@ -1,3 +1,11 @@
-// alert("Attached");
+const url = "./data.json";
+function getData(url) {
+  return fetch(url).then((response) => response.json());
+}
 
-let f = fetch("./data.json").then(results => results.json()).then(console.log);
+getData(url).then((result) => {
+  //   console.log(result);
+  result.forEach((el) => {
+    console.log(el);
+  });
+});
