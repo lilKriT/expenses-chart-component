@@ -13,4 +13,13 @@ getData(url).then((result) => {
     let div = document.querySelector("#" + el.day).children[0];
     div.style.height = el.amount + "px";
   });
+
+  result.forEach((el) => {
+      let div = document.querySelector("#" + el.day).children[0];
+    if (el.amount == max) {
+      div.classList.add("bg-cyan");
+    } else {
+      div.classList.add("bg-softRed");
+    }
+  });
 });
