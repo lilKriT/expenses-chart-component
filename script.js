@@ -4,11 +4,13 @@ function getData(url) {
 }
 
 getData(url).then((result) => {
-  //   console.log(result);
+  let max = 0;
   result.forEach((el) => {
-    console.log(el.day);
+    console.log(el);
+    if (el.amount > max) {
+      max = el.amount;
+    }
     let div = document.querySelector("#" + el.day).children[0];
-    // div.classList.add("h-6");
-    // div.classList.remove("rounded");
+    div.style.height = el.amount + "px";
   });
 });
