@@ -718,7 +718,17 @@ video {
   background-color: hsl(186 34% 60% / var(--tw-bg-opacity));
 }
 
+.cyanColumn:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(186 34% 70% / var(--tw-bg-opacity));
+}
+
 .softRedColumn {
   --tw-bg-opacity: 1;
   background-color: hsl(10 79% 65% / var(--tw-bg-opacity));
+}
+
+.softRedColumn:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(10 79% 75% / var(--tw-bg-opacity));
 }

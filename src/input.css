@@ -6,6 +6,14 @@
   @apply bg-cyan;
 }
 
+.cyanColumn:hover {
+  @apply bg-cyanLight;
+}
+
 .softRedColumn {
   @apply bg-softRed;
+}
+
+.softRedColumn:hover {
+  @apply bg-softRedLight;
 }
