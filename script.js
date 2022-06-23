@@ -17,9 +17,9 @@ getData(url).then((result) => {
   result.forEach((el) => {
       let div = document.querySelector("#" + el.day).children[0];
     if (el.amount == max) {
-      div.classList.add("bg-cyan");
+      div.classList.add("cyanColumn");
     } else {
-      div.classList.add("bg-softRed");
+      div.classList.add("softRedColumn");
     }
   });
 });
