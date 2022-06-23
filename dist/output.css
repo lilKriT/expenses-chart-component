@@ -716,19 +716,27 @@ video {
 .cyanColumn {
   --tw-bg-opacity: 1;
   background-color: hsl(186 34% 60% / var(--tw-bg-opacity));
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cyanColumn:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(186 34% 70% / var(--tw-bg-opacity));
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .softRedColumn {
   --tw-bg-opacity: 1;
   background-color: hsl(10 79% 65% / var(--tw-bg-opacity));
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .softRedColumn:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(10 79% 75% / var(--tw-bg-opacity));
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
