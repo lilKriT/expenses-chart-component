@@ -10,12 +10,12 @@ getData(url).then((result) => {
     if (el.amount > max) {
       max = el.amount;
     }
-    let div = document.querySelector("#" + el.day).children[0];
+    let div = document.querySelector("#" + el.day).children[1];
     div.style.height = el.amount + "px";
   });
 
   result.forEach((el) => {
-      let div = document.querySelector("#" + el.day).children[0];
+      let div = document.querySelector("#" + el.day).children[1];
     if (el.amount == max) {
       div.classList.add("bg-cyan");
     } else {
