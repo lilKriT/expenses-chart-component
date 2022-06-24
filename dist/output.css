@@ -575,12 +575,27 @@ video {
   color: hsl(27 66% 92% / var(--tw-text-opacity));
   opacity: 0;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .group:hover .tooltip {
   opacity: 1;
+}
+
+.chartCol {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .chartCol {
+  --tw-brightness: brightness(1.1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .my-8 {
@@ -649,8 +664,8 @@ video {
   gap: 1rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .self-end {
@@ -746,9 +761,4 @@ video {
 .text-mediumBrown {
   --tw-text-opacity: 1;
   color: hsl(28 10% 53% / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:brightness-110 {
-  --tw-brightness: brightness(1.1);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
