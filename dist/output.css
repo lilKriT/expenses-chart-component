@@ -562,6 +562,7 @@ video {
   position: absolute;
   left: 50%;
   top: -0.5rem;
+  z-index: 10;
   display: flex;
   --tw-translate-x: -50%;
   --tw-translate-y: -100%;
