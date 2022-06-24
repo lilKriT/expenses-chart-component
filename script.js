@@ -10,16 +10,18 @@ getData(url).then((result) => {
     if (el.amount > max) {
       max = el.amount;
     }
-    let div = document.querySelector("#" + el.day).children[1];
-    div.style.height = el.amount + "px";
+    let chartTooltip = document.querySelector("#" + el.day).children[0];
+    let chartColumn = document.querySelector("#" + el.day).children[1];
+    chartColumn.style.height = el.amount + "px";
+    chartTooltip.textContent = "$" + el.amount;
   });
 
   result.forEach((el) => {
-      let div = document.querySelector("#" + el.day).children[1];
+    let chartColumn = document.querySelector("#" + el.day).children[1];
     if (el.amount == max) {
-      div.classList.add("bg-cyan");
+      chartColumn.classList.add("bg-cyan");
     } else {
-      div.classList.add("bg-softRed");
+      chartColumn.classList.add("bg-softRed");
     }
   });
 });
